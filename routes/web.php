@@ -27,6 +27,8 @@ Route::post('/send-message/{id}', [FriendController::class, 'sendMessage'])->nam
 
 Route::get('/fetch-message/{id}', [FriendController::class, 'fetchMessage'])->name('fetch.message');
 
+Route::get('/joinin-chat/{id}', [FriendController::class, 'joinChat'])->name('join.message');
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

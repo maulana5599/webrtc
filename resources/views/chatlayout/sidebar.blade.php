@@ -144,7 +144,7 @@
                     <!-- Chat Contact List Start -->
                     <ul class="contacts-list" id="chatContactTab" data-chat-list="">
                         <!-- Chat Item Start -->
-                        <li class="contacts-item friends active">
+                        <li class="contacts-item friends active" onclick="chatWithPasien(22)">
                             <a class="contacts-link" href="javascript:;">
                                 <div class="avatar avatar-online">
                                     <img src="./../../assets/media/avatar/2.png" alt="">
@@ -1490,7 +1490,6 @@
 
                                 </div>
                                 <!-- Card End -->
-
                             </div>
                         </div>
                     </div>
@@ -1502,3 +1501,35 @@
     </div>
     <!-- Tab Content End -->
 </aside>
+<script>
+    const chatWithPasien = (id) => {
+        const chat = $('.chats')
+        chat.empty()
+        var url = '{{ route("join.message", ":id") }}';
+        url = url.replace(':id', id);
+        $('.chats').addClass('d-flex justify-content-center align-items-center');
+        $('.chats').append(`  
+            <div class="spinner-border" id="loader" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        `)
+        setTimeout(() => {
+            $.ajax({
+                type: "GET",
+                url: url,
+                success: function (response) {
+                if(response.status == 200) {
+                    $('.chats').removeClass('d-flex justify-content-center align-items-center');
+                    $('#loader').remove();
+                    $('.chats').append(response.data)
+                }
+                },
+                error: function(jqXhr) {
+                    alert(jqXhr.responseText)
+                }
+            });
+            console.log(chat)
+        }, 3000);
+      
+    }
+</script>

@@ -31,4 +31,12 @@ class FriendController extends Controller
         
         return Helpers::Response(['message' => $data]);
     }
+
+    public function joinChat(Request $request, $id)
+    {
+        $view = view('pages.chatbody')->render();
+        return Helpers::Response($view);
+
+    }
+
 }
