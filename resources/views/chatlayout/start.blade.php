@@ -4,7 +4,6 @@
         <!-- Chats Page Start -->
         <div class="chats">
             <div class="chat-body">
-
                 <!-- Chat Header Start-->
                 <div class="chat-header">
                     <!-- Chat Back Button (Visible only in Small Devices) -->
@@ -326,7 +325,7 @@
                     <div class="container">
 
                         <!-- Message Day Start -->
-                        <div class="message-day">
+                        {{-- <div class="message-day">
 
                             <div class="message-divider sticky-top pb-2" data-label="Yesterday">&nbsp;</div>
 
@@ -547,1216 +546,14 @@
                                 </div>
                             </div>
                             <!-- Self Message End -->
-
-                            <!-- Received Message Start -->
-                            <div class="message">
-                                <div class="message-wrapper">
-                                    <div class="message-content">
-                                        <span>I have done a lot of research on the subject, and I know I can
-                                            answer any questions I will receive from the audience.</span>
-                                    </div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-                                    <span class="message-date">9:12am</span>
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Received Message End -->
-
-                            <!-- Received Message Start -->
-                            <div class="message">
-                                <div class="message-wrapper">
-                                    <div class="message-content">
-                                        <span>I should talk about more precisely the sequence of my
-                                            presentation?</span>
-                                    </div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-                                    <span class="message-date">9:12am</span>
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Received Message End -->
-
-                            <!-- Self Message Start -->
-                            <div class="message self">
-                                <div class="message-wrapper">
-                                    <div class="message-content"><span>Yes, what you should present first,
-                                            second and third…</span></div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-
-                                    <span class="message-date">9:12am</span>
-
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/pencil.svg" alt="message edit"> -->
-                                                <span>Edit</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Self Message End -->
-
-                            <!-- Message Start -->
-                            <div class="message">
-                                <div class="message-wrapper">
-                                    <div class="message-content">
-                                        <div class="document">
-                                            <div
-                                                class="btn btn-primary btn-icon rounded-circle text-light mr-2">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-24" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-24" src="./../../assets/media/heroicons/outline/document.svg" alt=""> -->
-                                            </div>
-
-                                            <div class="document-body">
-                                                <h6>
-                                                    <a href="#" class="text-reset"
-                                                        title="global-warming-data-2020.xlxs">global-warming-data-2020.xlxs</a>
-                                                </h6>
-
-                                                <ul class="list-inline small mb-0">
-                                                    <li class="list-inline-item">
-                                                        <span class="text-muted">79.2 KB</span>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <span class="text-muted text-uppercase">xlxs</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-
-                                    <span class="message-date">9:12am</span>
-
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/download.svg" alt="download"> -->
-                                                <span>Download</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-
-                            <!-- Received Message Start -->
-                            <div class="message">
-                                <div class="message-wrapper">
-                                    <div class="message-content"><span>If that is the case, then I already have
-                                            an outline. To make it easy for my audience to follow the
-                                            presentation, I intend to post the outline on the board at all time
-                                            during my speech.</span></div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-                                    <span class="message-date">9:12am</span>
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18  rotate-y mr-2" fill="none"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Received Message End -->
-                        </div>
+                        </div> --}}
                         <!-- Message Day End -->
 
                         <!-- Message Day Start -->
                         <div class="message-day">
 
                             <div class="message-divider sticky-top pb-2" data-label="Today">&nbsp;</div>
-
-                            <!-- Self Message Start -->
-                            <div class="message self">
-                                <div class="message-wrapper">
-                                    <div class="message-content"><span>Good idea! By the way, do you have any
-                                            facts to back you up? For example, change of climate, yearly
-                                            disasters…</span></div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-
-                                    <span class="message-date">9:12am</span>
-                                    <span class="message-status">Edited</span>
-
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/pencil.svg" alt="message edit"> -->
-                                                <span>Edit</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Self Message End -->
-                            <!-- Received Message Start -->
-                            <div class="message">
-                                <div class="message-wrapper">
-                                    <div class="message-content">
-                                        <h6>I have shared some photos, Please have a look.</h6>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <a class="popup-media"
-                                                    href="./../../assets/media/shared-photos/01.jpg">
-                                                    <img class="img-fluid rounded"
-                                                        src="./../../assets/media/shared-photos/01.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="popup-media"
-                                                    href="./../../assets/media/shared-photos/02.jpg">
-                                                    <img class="img-fluid rounded"
-                                                        src="./../../assets/media/shared-photos/02.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="popup-media"
-                                                    href="./../../assets/media/shared-photos/03.jpg">
-                                                    <img class="img-fluid rounded"
-                                                        src="./../../assets/media/shared-photos/03.jpg" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-                                    <span class="message-date">9:12am</span>
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/download.svg" alt="download"> -->
-                                                <span>Download</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Received Message End -->
-
-                            <!-- Received Message Start -->
-                            <div class="message">
-                                <div class="message-wrapper">
-                                    <div class="message-content"><span>No, I have not thought about that. I
-                                            better get some statistics from the Internet. I should not have any
-                                            problems since the Internet has all kinds of data.</span></div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-                                    <span class="message-date">9:12am</span>
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18  rotate-y mr-2" fill="none"
-                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Received Message End -->
-
-                            <!-- Self Message Start -->
-                            <div class="message self">
-                                <div class="message-wrapper">
-                                    <div class="message-content"><span>Pictures will keep your audience from
-                                            being bored. In order for you to succeed, you need to keep them
-                                            interested and involved.</span></div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-
-                                    <span class="message-date">9:12am</span>
-
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/pencil.svg" alt="message edit"> -->
-                                                <span>Edit</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Self Message End -->
-
-                            <!-- Received Message Start -->
-                            <div class="message">
-                                <div class="message-wrapper">
-                                    <div class="message-content"><span>You are absolutely right. I will take
-                                            time to practice and to learn to relax and express myself really
-                                            well. Wish me luck, Catherine!</span></div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-                                    <span class="message-date">9:12am</span>
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Received Message End -->
-
-                            <!-- Self Message Start -->
-                            <div class="message self">
-                                <div class="message-wrapper">
-                                    <div class="message-content"><span>I know you. You can do it. Good luck,
-                                            Jennifer!</span></div>
-                                </div>
-                                <div class="message-options">
-                                    <div class="avatar avatar-sm"><img alt=""
-                                            src="./../../assets/media/avatar/6.png"></div>
-
-                                    <span class="message-date">Just now</span>
-
-                                    <div class="dropdown">
-                                        <a class="text-muted" href="#" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
-                                        </a>
-
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
-                                                <span>Copy</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/pencil.svg" alt="message edit"> -->
-                                                <span>Edit</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
-                                                <span>Replay</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
-                                                <span>Forward</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
-                                                <span>Favourite</span>
-                                            </a>
-                                            <a class="dropdown-item d-flex align-items-center text-danger"
-                                                href="#">
-                                                <!-- Default :: Inline SVG -->
-                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                </svg>
-
-                                                <!-- Alternate :: External File link -->
-                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Self Message End -->
+                            <div id="messageToday"></div>
                         </div>
                         <!-- Message Day End -->
                     </div>
@@ -1847,8 +644,7 @@
 
                     <textarea class="form-control emojionearea-form-control" id="messageInput" rows="1"
                         placeholder="Type your message here..."></textarea>
-                    <div class="btn btn-primary btn-icon send-icon rounded-circle text-light mb-1"
-                        role="button">
+                    <div class="btn btn-primary btn-icon send-icon rounded-circle text-light mb-1" onclick="sendMessage(22)">
                         <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -3197,6 +1993,341 @@
             </div>
         </div>
         <!-- Profile Settings End -->
+        <script>
 
+            let message = new Array();
+
+            const UserId = {{Auth::user()->id}}
+            const fetchMessage = async (idChannel = 22) => {
+                var url = '{{ route("fetch.message", ":id") }}';
+                url = url.replace(':id', idChannel);
+                await fetch(url, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                .then((response) => {
+                    return response.json()
+                })
+                .then((result) => {
+                    console.log(result)
+                    // let dataaja =  {
+                    //         "user_id": 1,
+                    //         "message": "Hallo"
+                    //     }
+                    // message.push(dataaja)
+                    // appendMessage(dataaja, UserId)
+                })
+                .catch((error) => {
+                    alert(error)
+                })
+            }
+
+            fetchMessage();
+
+            const sendMessage = async (id) => {
+                event.preventDefault()        
+                const messageInput = $('#messageInput').val();
+                if(messageInput == '' || messageInput == undefined) {
+                    alert('Pesan tidak boleh kosong')
+                    return false;
+                }
+          
+                var url = '{{ route("send.message", ":id") }}';
+                url = url.replace(':id', id);
+                 await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr('content')
+                    },
+                    body: JSON.stringify({
+                        'message': messageInput
+                    })
+                })
+                .then((response) => {
+                    return response.json();
+                })
+                .then((result) => {
+                    console.log(result)
+                    let message = {
+                        "user_id": UserId,
+                        "message": messageInput
+                    }
+
+                    appendOneMessage(message, UserId)
+                })
+                .catch((error) => {
+                    alert(error)
+                })
+            }
+
+          
+            let idChannel = 22;
+            window.Echo.channel(`message-${idChannel}`)
+                .listen('.MessagePrivate', function(e) {
+                    if (e.user_id != UserId) {
+                        appendOneMessage(e, e.user_id)
+                    }
+                })
+
+
+            const appendMessage = (data, userId) => {
+                console.log(userId, UserId)
+                if(userId != UserId) {
+                    console.log('KALO GA SAMA')
+                    message.map((value, index) => {
+                        $("#messageToday").append(receivedMessage);
+                    })
+
+                    return false;
+                } else {
+                    message.map((value, index) => {
+                        $("#messageToday").append(selfMessage);
+                    })
+                    return false;
+                }
+            }
+
+            const appendOneMessage = (data, userId) => {
+                console.log(userId, UserId)
+                if(userId != UserId) {
+                    let receiveMessage = receivedSetMessage(data)
+                    $("#messageToday").append(receiveMessage);
+                    return false;
+                } else {
+                    let selfMessage = selfSetMessage(data)
+                    $("#messageToday").append(selfMessage);
+                    return false;
+                }
+            }
+
+            const receivedSetMessage = (data) => {
+                const receivedMessage = `
+                            <div class="message">
+                                <div class="message-wrapper">
+                                    <div class="message-content">
+                                        <h6>${data?.message}</h6>
+                                    </div>
+                                </div>
+                                <div class="message-options">
+                                    <div class="avatar avatar-sm"><img alt=""
+                                            src="https://media.istockphoto.com/id/951331792/photo/portrait-of-uncertain-young-stylish-stubble-man-with-trendy-round-glasses-wears-demin-blue.jpg?s=612x612&w=0&k=20&c=SjjSwn1MLUo9rjYGwXc8xTWnq8LP_g6e9K7Zxe0I3qs=""></div>
+                                    <span class="message-date">9:12am</span>
+                                    <div class="dropdown">
+                                        <a class="text-muted" href="#" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <!-- Default :: Inline SVG -->
+                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                            </svg>
+
+                                            <!-- Alternate :: External File link -->
+                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
+                                        </a>
+
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/download.svg" alt="download"> -->
+                                                <span>Download</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
+                                                <span>Replay</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
+                                                <span>Forward</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
+                                                <span>Favourite</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center text-danger"
+                                                href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
+                                                <span>Delete</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`;
+                    return receivedMessage
+            }
+
+            const selfSetMessage = (data) => {
+
+                console.log(data)
+                const selfMessage = `
+                            <div class="message self">
+                                <div class="message-wrapper">
+                                    <div class="message-content">
+                                        <span>
+                                           ${data?.message}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="message-options">
+                                    <div class="avatar avatar-sm"><img alt=""
+                                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"></div>
+
+                                    <span class="message-date">9:12am</span>
+                                    <span class="message-status">Edited</span>
+
+                                    <div class="dropdown">
+                                        <a class="text-muted" href="#" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <!-- Default :: Inline SVG -->
+                                            <svg class="hw-18" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                            </svg>
+                                            <!-- <img class="injectable hw-18" src="./../../assets/media/heroicons/outline/dots-horizontal.svg" alt="message options"> -->
+                                        </a>
+
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/duplicate.svg" alt="message options"> -->
+                                                <span>Copy</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/pencil.svg" alt="message edit"> -->
+                                                <span>Edit</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message replay"> -->
+                                                <span>Replay</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 rotate-y mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable rotate-y hw-18 mr-2" src="./../../assets/media/heroicons/outline/reply.svg" alt="message forward"> -->
+                                                <span>Forward</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/star.svg" alt="message favourite"> -->
+                                                <span>Favourite</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex align-items-center text-danger"
+                                                href="#">
+                                                <!-- Default :: Inline SVG -->
+                                                <svg class="hw-18 mr-2" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                </svg>
+
+                                                <!-- Alternate :: External File link -->
+                                                <!-- <img class="injectable hw-18 mr-2" src="./../../assets/media/heroicons/outline/trash.svg" alt="message delete"> -->
+                                                <span>Delete</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                return selfMessage;
+                
+            }
+
+            const checkMessage = () => {
+                console.log(message)
+            }
+        </script>
     </main>
     <!-- Main End -->

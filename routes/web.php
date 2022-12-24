@@ -19,9 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 Route::get('/test-helper', [FriendController::class, 'connectedUser']);
+
+Route::post('/send-message/{id}', [FriendController::class, 'sendMessage'])->name('send.message');
+
+Route::get('/fetch-message/{id}', [FriendController::class, 'fetchMessage'])->name('fetch.message');
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
