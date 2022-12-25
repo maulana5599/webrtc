@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
-Route::get('/test-helper', [FriendController::class, 'connectedUser']);
+Route::get('/user-friend/{id}', [FriendController::class, 'connectedUser'])->name('user.friend');
 
 Route::post('/send-message/{id}', [FriendController::class, 'sendMessage'])->name('send.message');
 

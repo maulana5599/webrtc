@@ -144,106 +144,7 @@
                     <!-- Chat Contact List Start -->
                     <ul class="contacts-list" id="chatContactTab" data-chat-list="">
                         <!-- Chat Item Start -->
-                        <li class="contacts-item friends active" onclick="chatWithPasien(22)">
-                            <a class="contacts-link" href="javascript:;">
-                                <div class="avatar avatar-online">
-                                    <img src="./../../assets/media/avatar/2.png" alt="">
-                                </div>
-                                <div class="contacts-content">
-                                    <div class="contacts-info">
-                                        <h6 class="chat-name text-truncate">Catherine Richardson</h6>
-                                        <div class="chat-time">Just now</div>
-                                    </div>
-                                    <div class="contacts-texts">
-                                        <p class="text-truncate">I’m sorry, I didn’t catch that. Could you
-                                            please repeat?</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Chat Item End -->
-
-                        <!-- Chat Item Start -->
-                        <li class="contacts-item groups">
-                            <a class="contacts-link" href="./chat-2.html">
-                                <div class="avatar bg-success text-light">
-                                    <span>
-                                        <!-- Default :: Inline SVG -->
-                                        <svg class="hw-24" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                        </svg>
-
-                                        <!-- Alternate :: External File link -->
-                                        <!-- <img class="injectable" src="./../../assets/media/heroicons/outline/user-group.svg" alt=""> -->
-                                    </span>
-                                </div>
-                                <div class="contacts-content">
-                                    <div class="contacts-info">
-                                        <h6 class="chat-name">Themeforest Group</h6>
-                                        <div class="chat-time"><span>10:20 pm</span></div>
-                                    </div>
-                                    <div class="contacts-texts">
-                                        <p class="text-truncate"><span>Jeny: </span>That’s pretty common. I
-                                            heard that a lot of people had the same experience.</p>
-                                        <div class="d-inline-flex align-items-center ml-1">
-                                            <!-- Default :: Inline SVG -->
-                                            <svg class="hw-16 text-muted" viewBox="0 0 20 20"
-                                                fill="currentColor">
-                                                <path fill-rule="evenodd"
-                                                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-
-                                            <!-- Alternate :: External File link -->
-                                            <!-- <img class="injectable hw-16 text-muted" src="./../../assets/media/heroicons/solid/lock-closed.svg" alt=""> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Chat Item End -->
-
-                        <!-- Chat Item Start -->
-                        <li class="contacts-item friends unread">
-                            <a class="contacts-link" href="#">
-                                <div class="avatar avatar-offline bg-info text-light">
-                                    <span>EW</span>
-                                </div>
-                                <div class="contacts-content">
-                                    <div class="contacts-info">
-                                        <h6 class="chat-name">Eva Walker</h6>
-                                        <div class="chat-time">09:36 am</div>
-                                    </div>
-                                    <div class="contacts-texts">
-                                        <p class="text-truncate">You’re kidding! I drive a motorcycle as
-                                            well. What type of bike do you have?</p>
-                                        <div class="badge badge-rounded badge-primary ml-1">2</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Chat Item End -->
-
-                        <!-- Chat Item Start -->
-                        <li class="contacts-item archived">
-                            <a class="contacts-link" href="#">
-                                <div class="avatar avatar-away"><img src="./../../assets/media/avatar/8.png"
-                                        alt=""></div>
-                                <div class="contacts-content">
-                                    <div class="contacts-info">
-                                        <h6 class="chat-name">Annie Richardson</h6>
-                                        <div class="chat-time"><span>26/12/19</span></div>
-                                    </div>
-                                    <div class="contacts-texts">
-                                        <p class="text-truncate">I think I have everything I need, thank
-                                            you!</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                     
                         <!-- Chat Item End -->
                     </ul>
                     <!-- Chat Contact List End -->
@@ -1502,7 +1403,31 @@
     <!-- Tab Content End -->
 </aside>
 <script>
-    const chatWithPasien = (id) => {
+
+let Id = '{{Auth::user()->id}}'
+    const getUserFriend = (id) => {
+        var url = '{{ route("user.friend", ":id") }}';
+        url = url.replace(':id', id);
+        setTimeout(() => {
+            $.ajax({
+                type: "GET",
+                url: url,
+                success: function (response) {
+                if(response.status == 200) {
+                    appendContactUser(response.data)
+                }
+                },
+                error: function(jqXhr) {
+                    alert(jqXhr.responseText)
+                }
+            });
+        }, 500)
+    }
+
+    getUserFriend(Id)
+
+    
+    const chatWithPasien = (id, number_phone) => {
         const chat = $('.chats')
         chat.empty()
         var url = '{{ route("join.message", ":id") }}';
@@ -1517,6 +1442,9 @@
             $.ajax({
                 type: "GET",
                 url: url,
+                data: {
+                    user_number: number_phone
+                },
                 success: function (response) {
                 if(response.status == 200) {
                     $('.chats').removeClass('d-flex justify-content-center align-items-center');
@@ -1530,6 +1458,40 @@
             });
             console.log(chat)
         }, 3000);
-      
+    }
+
+    const componentContactUser = (data) => {
+        const contact = `
+            <li class="contacts-item friends active" data-target="${data.friend_user?.id}" onclick="chatWithPasien(${data.friend_user?.id}, '${data.friend_user?.nomer_handphone}')">
+                <a class="contacts-link" href="javascript:;">
+                    <div class="avatar avatar-online">
+                        <img src="./../../assets/media/avatar/2.png" alt="">
+                    </div>
+                    <div class="contacts-content">
+                        <div class="contacts-info">
+                            <h6 class="chat-name text-truncate">${data.friend_user?.name}</h6>
+                            <div class="chat-time">Just now</div>
+                        </div>
+                        <div class="contacts-texts">
+                            <p class="text-truncate">I’m sorry, I didn’t catch that. Could you
+                                please repeat?</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        `;
+
+        return contact
+    }
+
+    
+    const appendContactUser = (data) => {
+        console.log(data.friend)
+        if (data?.friend.length > 0 || data.friend != undefined) {
+            data?.friend.map((value, index) => {
+                let contact = componentContactUser(value)
+                $('#chatContactTab').append(contact)
+            })
+        }
     }
 </script>

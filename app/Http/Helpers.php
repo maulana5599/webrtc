@@ -6,6 +6,8 @@ use GuzzleHttp\Psr7\Request;
 
 class Helpers extends Controller {
 
+
+    const IS_VERIFIKASI = 1;
     /**
      * @author Maulana Muhammad Rizky
      * Merupakan function response untuk user

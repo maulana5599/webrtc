@@ -21,7 +21,7 @@
             </div>
 
             <div class="media-body align-self-center ">
-                <h6 class="text-truncate mb-0">Catherine Richardson</h6>
+                <h6 class="text-truncate mb-0">{{$user->name}}</h6>
                 <small class="text-muted">Online</small>
             </div>
         </div>
@@ -638,7 +638,7 @@
 
         <textarea class="form-control emojionearea-form-control" id="messageInput" rows="1"
             placeholder="Type your message here..."></textarea>
-        <div class="btn btn-primary btn-icon send-icon rounded-circle text-light mb-1" onclick="sendMessage(22)">
+        <div class="btn btn-primary btn-icon send-icon rounded-circle text-light mb-1" onclick="sendMessage('{{$idChannel}}')">
             <svg class="hw-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -652,9 +652,10 @@
 <script>
 
     let message = new Array();
-
+    let idChannel = '{{ $idChannel }}';
+    console.log(idChannel, "INI ID CHANNEL")
     const UserId = {{Auth::user()->id}}
-    const fetchMessage = async (idChannel = 22) => {
+    const fetchMessage = async (idChannel) => {
         var url = '{{ route("fetch.message", ":id") }}';
         url = url.replace(':id', idChannel);
         await fetch(url, {
@@ -680,7 +681,7 @@
         })
     }
 
-    fetchMessage();
+    fetchMessage(idChannel);
 
     const sendMessage = async (id) => {
         event.preventDefault()        
@@ -699,7 +700,8 @@
                 "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr('content')
             },
             body: JSON.stringify({
-                'message': messageInput
+                'message': messageInput,
+                'channel': idChannel
             })
         })
         .then((response) => {
@@ -718,11 +720,11 @@
             alert(error)
         })
     }
-
-
-    let idChannel = 22;
+    
+    console.log(window.Echo)
     window.Echo.channel(`message-${idChannel}`)
         .listen('.MessagePrivate', function(e) {
+            console.log(e)
             if (e.user_id != UserId) {
                 appendOneMessage(e, e.user_id)
             }
@@ -730,9 +732,7 @@
 
 
     const appendMessage = (data, userId) => {
-        console.log(userId, UserId)
         if(userId != UserId) {
-            console.log('KALO GA SAMA')
             message.map((value, index) => {
                 $("#messageToday").append(receivedMessage);
             })
@@ -861,8 +861,6 @@
     }
 
     const selfSetMessage = (data) => {
-
-        console.log(data)
         const selfMessage = `
                     <div class="message self">
                         <div class="message-wrapper">
