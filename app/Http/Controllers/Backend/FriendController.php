@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Events\MessageEvent;
 use App\Http\Controllers\Controller;
 use App\Http\Helpers\Helpers;
+use App\Jobs\consumerMessageJob;
 use App\Models\User;
 use App\Models\UserChannel;
 use App\Models\UserChats;
@@ -30,6 +31,11 @@ class FriendController extends Controller
 
     public function sendMessage(Request $request, $id)
     {
+        $data = [
+            'user_id' => Auth::user()->id,
+            'message' => $request->message 
+        ];
+        consumerMessageJob::dispatch($data);
         event(new MessageEvent($id, $request->message, Auth::user()->id));
         return Helpers::Response(['data' => $request->channel]);
     }
