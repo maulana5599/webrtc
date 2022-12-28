@@ -15,6 +15,7 @@ class UserFriend extends Model
         'user_id',
         'friend_id',
         'verifikasi',
+        'is_deleted'
     ];
 
     public function FriendUser()

@@ -29,6 +29,10 @@ Route::get('/fetch-message/{id}', [FriendController::class, 'fetchMessage'])->na
 
 Route::get('/joinin-chat/{id}', [FriendController::class, 'joinChat'])->name('join.message');
 
+Route::get('/invite-friend', [FriendController::class, 'showPopupInvite'])->name('invite.popup');
+
+Route::post('/save-invite', [FriendController::class, 'saveInvite'])->name('save.invite');
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

@@ -73,8 +73,7 @@
                                             <a class="dropdown-item" href="#" role="button"
                                                 data-toggle="modal" data-target="#createGroup">Create
                                                 Group</a>
-                                            <a class="dropdown-item" href="#" role="button"
-                                                data-toggle="modal" data-target="#inviteOthers">Invite
+                                            <a class="dropdown-item" href="#" role="button" id="invite-modal" onclick="showPopupInvite()">Invite
                                                 Others</a>
                                         </div>
                                     </div>
@@ -1399,12 +1398,37 @@
             </div>
         </div>
         <!-- Profile Tab Content End -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Invite Friend</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form-invite'>
+                            <div class="form">
+                                <input type="number" class="form-control value-number" placeholder="Add friend number..">
+                            </div>
+                            <div class="mt-2">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" onclick="saveInvite()">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Tab Content End -->
 </aside>
 <script>
 
-let Id = '{{Auth::user()->id}}'
+    let Id = '{{Auth::user()->id}}'
     const getUserFriend = (id) => {
         var url = '{{ route("user.friend", ":id") }}';
         url = url.replace(':id', id);
@@ -1456,8 +1480,7 @@ let Id = '{{Auth::user()->id}}'
                     alert(jqXhr.responseText)
                 }
             });
-            console.log(chat)
-        }, 3000);
+        }, 1000);
     }
 
     const componentContactUser = (data) => {
@@ -1494,4 +1517,41 @@ let Id = '{{Auth::user()->id}}'
             })
         }
     }
+
+    const showPopupInvite = () => {
+        $('#exampleModalCenter').modal('show')   
+        return false;
+    }
+
+    const saveInvite = () => {
+        const value = $('.value-number').val()
+        if (value == undefined) {
+            alert('Oops number handphone tidak valid')
+            return false;
+        }
+
+        $.ajaxSetup({
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr('content')
+            },
+        })
+
+        let data = {
+            'number_phone': value
+        }
+
+        $.ajax({
+            type: "POST",
+            url: '{{route('save.invite')}}',
+            data: data,
+            success: function (response) {
+                console.log(response)
+            },
+            error: function(jqXhr) {
+                alert(jqXhr.responseText)
+            }
+        });
+    }
+
+
 </script>

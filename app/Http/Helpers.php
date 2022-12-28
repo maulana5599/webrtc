@@ -8,6 +8,7 @@ class Helpers extends Controller {
 
 
     const IS_VERIFIKASI = 1;
+    const IS_NOT_VERIFIKASI = 0;
     /**
      * @author Maulana Muhammad Rizky
      * Merupakan function response untuk user

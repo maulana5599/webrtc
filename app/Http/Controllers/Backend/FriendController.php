@@ -13,6 +13,7 @@ use App\Models\UserFriend;
 use GuzzleHttp\Psr7\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Ramsey\Uuid\Uuid;
 
 class FriendController extends Controller
 {
@@ -35,9 +36,9 @@ class FriendController extends Controller
             'user_id' => Auth::user()->id,
             'message' => $request->message 
         ];
-        consumerMessageJob::dispatch($data);
+        // consumerMessageJob::dispatch($data);
         event(new MessageEvent($id, $request->message, Auth::user()->id));
-        return Helpers::Response(['data' => $request->channel]);
+        return Helpers::Response(['channel' => $id]);
     }
 
     public function fetchMessage($idChannel)
@@ -75,6 +76,46 @@ class FriendController extends Controller
     
         $view = view('pages.chatbody', compact('user', 'idChannel'))->render();  
         return Helpers::Response($view);
+    }
+
+    public function showPopupInvite(Request $request)
+    {
+        $view = view('pages.partial.modal_invite')->render();
+        return response()->json($view);
+    }
+
+    public function saveInvite(Request $request)
+    {
+        $user = User::where(['nomer_handphone' => $request->number_phone])->first();
+        if (empty($user)) {
+            return response()->json([
+                "status" => 404,
+                'message' => "User tidak ditemukan"
+            ]);
+        }
+
+        $dataFriend = [
+            'user_id' => Auth::user()->id,
+            'friend_id' => $user->id,
+            'verifikasi' => Helpers::IS_NOT_VERIFIKASI,
+            'is_deleted' => false
+        ];
+
+        $dataChannel = [
+            'nomer_pendaftar' => Auth::user()->nomer_handphone,
+            'nomer_didaftarkan' => $request->number_phone,
+            'verifikasi' => Helpers::IS_NOT_VERIFIKASI,
+            'channel' => Uuid::uuid4()->toString()
+        ];
+
+        UserFriend::create($dataFriend);
+
+        UserChannel::create($dataChannel);
+
+        return Helpers::Response([
+            'friend' => $dataFriend,
+            'channel' => $dataChannel
+        ]);
     }
 
 }
